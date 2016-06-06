@@ -1,0 +1,9 @@
+resolver: lts-6.2
+packages:
+- '.'
+
+flags:
+  servant-bazaar:
+    with-servant-client: true
+    with-servant-server: true
+    with-servant-swagger: true
