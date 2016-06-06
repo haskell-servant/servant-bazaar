@@ -2,6 +2,10 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeOperators #-}
 
+-- | Implements an instance @'HasSwagger' ('Bazaar' :> api)@. It doesn't --
+-- alter the generated 'Data.Swagger.Swagger' value and is solely provided to
+-- allow to use the 'Bazaar' combinator in combination with @servant-swagger@.
+
 module Servant.Bazaar.Swagger where
 
 import           Data.Proxy

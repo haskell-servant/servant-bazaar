@@ -4,6 +4,10 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE TypeOperators #-}
 
+-- | Implements an instance @'HasServer' ('Bazaar' :> api)@ with
+--
+-- > Server (Bazaar :> api) ~ Bazaar -> Server api
+
 module Servant.Bazaar.Server where
 
 import           Data.Proxy
