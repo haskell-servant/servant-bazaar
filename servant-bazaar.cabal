@@ -1,7 +1,16 @@
 name:           servant-bazaar
 version:        0.1
-build-type:     Simple
+synopsis: An example project for servant combinators
+description:
+  An example project to illustrate how to package servant combinators
+  while avoiding introducing unwanted dependencies.
+category:       Web
+maintainer:     SoenkeHahn@gmail.com
+license:        BSD3
+license-file:   LICENSE
+
 cabal-version:  >= 1.10
+build-type:     Simple
 
 flag with-servant-server
   description: support for servant-server
@@ -22,7 +31,7 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base
+      base < 5
     , servant == 0.7.1.*
   if flag(with-servant-server)
     build-depends:
